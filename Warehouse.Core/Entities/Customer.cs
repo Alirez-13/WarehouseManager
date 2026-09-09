@@ -1,6 +1,6 @@
-namespace Warehouse.Core.Entities;
-
 using Warehouse.Core.Common;
+
+namespace Warehouse.Core.Entities;
 
 public class Customer : BaseEntity
 {
@@ -11,5 +11,6 @@ public class Customer : BaseEntity
     public bool IsActive { get; set; } = true;
 
     // Navigation
-    public virtual ICollection<OutboundTransaction> OutboundTransactions { get; set; } = new List<OutboundTransaction>();
+    public virtual ICollection<OutboundTransaction> OutboundTransactions { get; set; } =
+        new List<OutboundTransaction>();
 }

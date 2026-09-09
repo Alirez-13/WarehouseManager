@@ -1,6 +1,6 @@
 namespace Warehouse.Core.Entities;
 
-using Warehouse.Core.Common;
+using Common;
 
 public class Product : BaseEntity
 {
